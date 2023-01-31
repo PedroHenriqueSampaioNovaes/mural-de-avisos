@@ -2,7 +2,7 @@
 
 async function updatePosts() {
   const response = await fetch('https://mural-de-avisos-pedrohenriquesampaionovaes.vercel.app/api/all');
-  const posts = JSON.parse(await response.json());
+  const posts = await response.json();
   console.log(posts)
 
   let postElements = '';
