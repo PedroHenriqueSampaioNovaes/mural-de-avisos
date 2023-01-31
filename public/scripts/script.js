@@ -3,6 +3,7 @@
 async function updatePosts() {
   const response = await fetch('https://mural-de-avisos-gules.vercel.app/api/all');
   const posts = JSON.parse(await response.json());
+  console.log(posts)
 
   let postElements = '';
   posts.forEach((post) => {
