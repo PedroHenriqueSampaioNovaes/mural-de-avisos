@@ -8,3 +8,7 @@ A ideia do projeto é de se comunicar com o back-end através do front-end para 
 Enquanto a rota /new é acionada para adicionar uma nova postagem dentro do nosso objeto posts (armazena as informações de todas postagens), recebendo o título e a descrição passada
 pelo usuário, e então criando um id aleatório.
 - E dentro do script.js que se encontra no caminho public/scripts do projeto, executa-se o algoritmo responsável por acionar essas API's quando necessário.
+
+## Imagens do projeto
+![image](https://user-images.githubusercontent.com/92189897/215872067-ee6c3c21-89b5-4eea-8792-217659967953.png)
+![image](https://user-images.githubusercontent.com/92189897/215872253-969a3857-d184-488b-9d5e-f7e34135e116.png)
