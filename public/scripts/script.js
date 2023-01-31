@@ -2,7 +2,7 @@
 
 async function updatePosts() {
   const response = await fetch('http://localhost:3000/api/all');
-  const posts = await response.json();
+  const posts = JSON.parse(await response.json());
   console.log(posts)
 
   let postElements = '';
