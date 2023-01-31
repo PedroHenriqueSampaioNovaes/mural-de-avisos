@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => updatePosts());
 
 async function updatePosts() {
-  const response = await fetch('https://mural-de-avisos-gules.vercel.app/api/all', {method: 'GET', headers: {'Content-Type': 'application/json'}});
+  const response = await fetch('https://mural-de-avisos-gules.vercel.app/api/all');
   const posts = JSON.parse(await response.json());
 
   let postElements = '';
