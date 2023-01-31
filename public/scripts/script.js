@@ -1,7 +1,7 @@
 // document.addEventListener('DOMContentLoaded', () => updatePosts());
 
 async function updatePosts() {
-  const response = await fetch('https://mural-de-avisos-pedrohenriquesampaionovaes.vercel.app/api/all');
+  const response = await fetch('http://localhost:3000/api/all');
   const posts = await response.json();
   console.log(posts)
 
@@ -32,7 +32,7 @@ function newPost() {
     },
     body: JSON.stringify({ title, description }),
   }
-  fetch('https://mural-de-avisos-pedrohenriquesampaionovaes.vercel.app/api/new', options).then(() => {
+  fetch('http://localhost:3000/api/new', options).then(() => {
     updatePosts();
     document.querySelector('#title').value = '';
     document.querySelector('#desc').value = '';
