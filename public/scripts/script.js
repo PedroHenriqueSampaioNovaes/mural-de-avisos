@@ -1,4 +1,4 @@
-// document.addEventListener('DOMContentLoaded', () => updatePosts());
+document.addEventListener('DOMContentLoaded', () => updatePosts());
 
 async function updatePosts() {
   const response = await fetch('http://localhost:3000/api/all');
