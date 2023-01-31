@@ -18,22 +18,22 @@ async function updatePosts() {
   document.querySelector('#posts').innerHTML = postElements;
 }
 
-function newPost() {
-  const title = document.querySelector('#title').value;
-  const description = document.querySelector('#desc').value;
+// function newPost() {
+//   const title = document.querySelector('#title').value;
+//   const description = document.querySelector('#desc').value;
 
-  if (!title.length || !description.length) return;
+//   if (!title.length || !description.length) return;
 
-  const options = {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ title, description }),
-  }
-  fetch('https://mural-de-avisos-gules.vercel.app/api/new', options).then(() => {
-    updatePosts();
-    document.querySelector('#title').value = '';
-    document.querySelector('#desc').value = '';
-  });
-}
+//   const options = {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json',
+//     },
+//     body: JSON.stringify({ title, description }),
+//   }
+//   fetch('https://mural-de-avisos-gules.vercel.app/api/new', options).then(() => {
+//     updatePosts();
+//     document.querySelector('#title').value = '';
+//     document.querySelector('#desc').value = '';
+//   });
+// }
